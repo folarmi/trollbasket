@@ -1,0 +1,52 @@
+.details-header {
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  font-size: 14px;
+  font-weight: 400;
+  color: "red";
+}
+
+.left-arrow {
+  margin-right: 5rem;
+}
+
+.product-image {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.product-image img {
+  object-fit: cover;
+  width: 80%;
+}
+
+.product-name {
+  font-weight: 400;
+  font-size: 14px;
+  color: "#212c3d";
+  margin-bottom: 0.2rem;
+}
+
+.product-desc {
+  font-weight: 400;
+  font-size: 12px;
+  color: "#627483";
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  color: "#212c3d";
+  margin: 1.2rem 0;
+}
+
+#piece {
+  font-weight: 400;
+  font-size: 12px;
+  color: "#627483";
+}

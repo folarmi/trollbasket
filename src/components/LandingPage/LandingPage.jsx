@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../LandingPage.css";
 import { products } from "../../data/items";
 import location from "../../assets/location.svg";
@@ -80,12 +82,12 @@ const LandingPage = () => {
         <div className="products">
           {products.map(({ id, name, image, price, stock }) => {
             return (
-              <div className="product" key={id}>
+              <Link className="product" key={id} to={`/details/${id}`}>
                 <img src={image} alt={name} />
                 <p className="product-name">{name}</p>
                 <p className="product-price">{price}</p>
                 <p className="product-quantity">MOQ {stock} (pieces)</p>
-              </div>
+              </Link>
             );
           })}
         </div>
