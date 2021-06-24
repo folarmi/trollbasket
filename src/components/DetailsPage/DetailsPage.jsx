@@ -1,3 +1,5 @@
+import { useDispatch, useSelector } from "react-redux";
+
 import "../DetailsPage/DetailsPage.css";
 import leftArrow from "../../assets/leftArrow.svg";
 import search from "../../assets/search.svg";
@@ -5,10 +7,14 @@ import rating from "../../assets/rating.svg";
 import avatar from "../../assets/avatar.svg";
 import cartWithItem from "../../assets/cartWithItem.svg";
 import { SectionWrapper } from "../../Layout/SectionWrapper";
+import { addToCart } from "../../redux/actions";
 
 const DetailsPage = ({ product }) => {
+  const id = useSelector((state) => state.id);
+  const dispatch = useDispatch();
   return (
     <div>
+      {console.log(product.id)}
       <SectionWrapper>
         <section className="details-header">
           <div className="left-arrow">
@@ -50,7 +56,9 @@ const DetailsPage = ({ product }) => {
         </section>
 
         <div className="buttons">
-          <button>Add to cart</button>
+          <button onClick={() => dispatch(console.log(addToCart(product.id)))}>
+            Add to cart
+          </button>
           <button>Wishlist</button>
         </div>
       </SectionWrapper>

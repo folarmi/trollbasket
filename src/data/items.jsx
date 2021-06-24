@@ -17,6 +17,7 @@ export const products = [
     stock: 5,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
+    selected: false,
   },
   {
     id: "1235ads421egjdsc",
@@ -27,6 +28,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -39,6 +41,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -51,6 +54,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -63,6 +67,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -75,6 +80,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -87,6 +93,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -99,6 +106,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -111,6 +119,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -123,6 +132,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -135,6 +145,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
@@ -147,6 +158,7 @@ export const products = [
     price: "45,000 - 90,000",
     location: "Lagos",
     stock: 5,
+    selected: false,
     review:
       "This is the best product I have used in a long while and the size fits perfectly and I love the colors!!!!!",
   },
