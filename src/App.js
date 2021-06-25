@@ -1,32 +1,29 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Provider } from "react-redux";
-
 import { products } from "../src/data/items";
 import LandingPage from "./components/LandingPage/LandingPage";
 import "./App.css";
 import DetailsPage from "./components/DetailsPage/DetailsPage";
-import store from "./redux/store";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Router>
-        <Switch>
-          <div className="">
-            <Route path="/" exact component={LandingPage} />
-            <Route
-              exact
-              path="/details/:id"
-              render={({ match }) => (
-                <DetailsPage
-                  product={products.find((item) => item.id === match.params.id)}
-                />
-              )}
-            />
-          </div>
-        </Switch>
-      </Router>
-    </Provider>
+    <Router>
+      <Switch>
+        <div className="">
+          <Route path="/" exact component={LandingPage} />
+          <Route
+            exact
+            path="/details/:id"
+            render={({ match }) => (
+              <DetailsPage
+                product={products.find((item) => item.id === match.params.id)}
+              />
+            )}
+          />
+          <Route path="/cart" exact component={Cart} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 

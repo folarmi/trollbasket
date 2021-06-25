@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { useState, useEffect } from "react";
 
 import "../LandingPage.css";
-import { products } from "../../data/items";
 import location from "../../assets/location.svg";
 import order from "../../assets/order.svg";
 import search from "../../assets/search.svg";
-import cartWithItem from "../../assets/cartWithItem.svg";
+import cartPhoto from "../../assets/cart.svg";
 import background from "../../assets/background.svg";
 import orangeBg from "../../assets/orangeBg.svg";
 import blueBg from "../../assets/blueBg.svg";
@@ -20,7 +21,17 @@ import more from "../../assets/more.svg";
 import wallet from "../../assets/wallet.svg";
 import { SectionWrapper } from "../../Layout/SectionWrapper";
 
-const LandingPage = () => {
+const LandingPage = ({ products, cart }) => {
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    let count = 0;
+    cart.forEach((item) => {
+      count += item.qty;
+    });
+
+    setCartCount(count);
+  }, [cart, cartCount]);
   return (
     <div className="">
       <SectionWrapper>
@@ -41,10 +52,11 @@ const LandingPage = () => {
             <img src={order} alt="order" />
             <p>My Orders</p>
           </div>
-          <div className="header-flex">
-            <img src={cartWithItem} alt="cartWithItem" />
+          <Link to="/cart" className="header-flex">
+            <p>{cartCount}</p>
+            <img src={cartPhoto} alt="cart" />
             <p>Cart</p>
-          </div>
+          </Link>
         </section>
 
         <div className="input-icon">
@@ -119,4 +131,11 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+const mapStateToProps = (state) => {
+  return {
+    products: state.shop.allProducts,
+    cart: state.shop.cart,
+  };
+};
+
+export default connect(mapStateToProps)(LandingPage);

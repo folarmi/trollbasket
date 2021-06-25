@@ -12,7 +12,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item2,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     review:
@@ -25,7 +25,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item1,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -38,7 +38,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item3,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -51,7 +51,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item4,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -64,7 +64,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item5,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -77,7 +77,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item6,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -90,7 +90,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item1,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -103,7 +103,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item2,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -116,7 +116,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item3,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -129,7 +129,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item1,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -142,7 +142,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item6,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -155,7 +155,7 @@ export const products = [
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item1,
-    price: "45,000 - 90,000",
+    price: 45000,
     location: "Lagos",
     stock: 5,
     selected: false,
