@@ -13,7 +13,6 @@ import { SectionWrapper } from "../../Layout/SectionWrapper";
 const DetailsPage = ({ product, addToCart }) => {
   return (
     <div>
-      {console.log(product.id)}
       <SectionWrapper>
         <section className="details-header">
           <div className="left-arrow">
