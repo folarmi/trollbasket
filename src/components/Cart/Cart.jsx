@@ -78,12 +78,14 @@ const Cart = ({ products, cart, removeFromCart }) => {
           <p className="cart-total">
             Total:<span id="totalPrice">{totalPrice}</span>
           </p>
-          <button
-            className="primary-button"
-            style={{ width: "100%", marginTop: ".7rem" }}
-          >
-            Checkout
-          </button>
+          <Link to="/checkout">
+            <button
+              className="primary-button"
+              style={{ width: "100%", marginTop: ".7rem" }}
+            >
+              Checkout
+            </button>
+          </Link>
         </div>
       </SectionWrapper>
 

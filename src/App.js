@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import "./App.css";
 import DetailsPage from "./components/DetailsPage/DetailsPage";
 import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             )}
           />
           <Route path="/cart" exact component={Cart} />
+          <Route path="/checkout" exact component={Checkout} />
         </div>
       </Switch>
     </Router>
