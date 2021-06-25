@@ -6,6 +6,10 @@ header p {
 
 .option {
   display: flex;
+  border-top: 1px solid #f6f2f2;
+  border-bottom: 1px solid #f6f2f2;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 .option p {
@@ -16,6 +20,10 @@ header p {
   margin: 1rem 0;
 }
 
+select {
+  background: none;
+}
+
 .header-flex {
   display: flex;
   width: 100%;
@@ -24,6 +32,7 @@ header p {
 
 .input-icon {
   border-radius: 14px;
+  /* background: #f6f2f2; */
 }
 
 .input-icon input {
@@ -85,10 +94,22 @@ header p {
 
 .products a {
   text-decoration: none;
-  color: "red";
+  color: #071827;
 }
 
-.products a:visited {
+/* .products a:visited {
+} */
+
+.cart-name {
+  color: #071827;
+}
+
+.cart-details {
+  border-left: 1px solid #f6f2f2;
+}
+
+.order {
+  border-left: 1px solid #f6f2f2;
 }
 
 .product {

@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { addToCart } from "../../redux/Shopping/shopping-actions";
 import "../DetailsPage/DetailsPage.css";
@@ -15,9 +16,9 @@ const DetailsPage = ({ product, addToCart }) => {
     <div>
       <SectionWrapper>
         <section className="details-header">
-          <div className="left-arrow">
+          <Link to="/" className="left-arrow">
             <img src={leftArrow} alt="leftArrow" />
-          </div>
+          </Link>
           <p className="details ">Details</p>
           <img src={search} alt="search" className="search" />
           <img src={cartWithItem} alt="cartWithItem" className="cart" />

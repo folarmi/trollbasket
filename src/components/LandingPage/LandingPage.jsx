@@ -20,9 +20,33 @@ import deals from "../../assets/price.svg";
 import more from "../../assets/more.svg";
 import wallet from "../../assets/wallet.svg";
 import { SectionWrapper } from "../../Layout/SectionWrapper";
+import { Select } from "../atoms/Select";
 
 const LandingPage = ({ products, cart }) => {
   const [cartCount, setCartCount] = useState(0);
+  const [searchValue, setSearchValue] = useState("");
+  const [productToDisplay, setProductToDisplay] = useState(products);
+
+  const getSearchValue = () => {
+    const searchedItems = products.filter(
+      (product) => product.name === searchValue
+    );
+    setProductToDisplay(searchedItems);
+  };
+
+  const filterByState = (val) => {
+    const searchedState = products.filter(
+      (product) => product.location === val
+    );
+    setProductToDisplay(searchedState);
+    console.log(val, searchedState);
+  };
+
+  const state = [
+    ["Lagos", "Lagos"],
+    ["Ibadan", "Ibadan"],
+    ["Ogun", "Ogun"],
+  ];
 
   useEffect(() => {
     let count = 0;
@@ -38,30 +62,47 @@ const LandingPage = ({ products, cart }) => {
         <header>
           <p className="">Trollbasket</p>
         </header>
+      </SectionWrapper>
 
-        <section className="option">
-          <div className="header-flex">
-            <img src={location} alt="location" />
-            <select name="" id="">
-              <option value="1">Lagos</option>
-              <option value="1">Ogun</option>
-              <option value="1">Ibadan</option>
-            </select>
-          </div>
-          <div className="header-flex">
-            <img src={order} alt="order" />
-            <p>My Orders</p>
-          </div>
-          <Link to="/cart" className="header-flex">
-            <p>{cartCount}</p>
+      <section className="option">
+        <div className="header-flex ">
+          <img src={location} alt="location" />
+          <Select
+            values={state}
+            selectedValue="Lagos"
+            onValueChange={(val) => filterByState(val)}
+          />
+        </div>
+        <div className="header-flex order">
+          <img src={order} alt="order" />
+          <p>My Orders</p>
+        </div>
+        <Link
+          to="/cart"
+          className="header-flex"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="header-flex cart-details">
             <img src={cartPhoto} alt="cart" />
-            <p>Cart</p>
-          </Link>
-        </section>
+            <p>{cartCount}</p>
+          </div>
+          <p className="cart-name">Cart</p>
+        </Link>
+      </section>
 
+      <SectionWrapper>
         <div className="input-icon">
-          <img src={search} alt="search" className="icon" />
-          <input type="text" name="" id="" placeholder="Search merchbuy" />
+          <img
+            src={search}
+            alt="search"
+            className="icon"
+            onClick={getSearchValue}
+          />
+          <input
+            type="text"
+            placeholder="Search merchbuy"
+            onChange={(e) => setSearchValue(e.target.value)}
+          />
         </div>
       </SectionWrapper>
 
@@ -92,7 +133,7 @@ const LandingPage = ({ products, cart }) => {
         </section>
 
         <div className="products">
-          {products.map(({ id, name, image, price, stock }) => {
+          {productToDisplay.map(({ id, name, image, price, stock }) => {
             return (
               <Link className="product" key={id} to={`/details/${id}`}>
                 <img src={image} alt={name} />

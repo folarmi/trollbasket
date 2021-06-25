@@ -8,7 +8,7 @@ import item6 from "../assets/item6.svg";
 export const products = [
   {
     id: "1234ads421egjdsc",
-    name: "NIKE Huararche 2019",
+    name: "NIKE Shoes",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item2,
@@ -34,11 +34,11 @@ export const products = [
   },
   {
     id: "1885ads421egjdsc",
-    name: "small tote bag",
+    name: "Coke",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item3,
-    price: 45000,
+    price: 150,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -47,11 +47,11 @@ export const products = [
   },
   {
     id: "1235ads781egjdsc",
-    name: "small tote bag",
+    name: "Spices",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item4,
-    price: 45000,
+    price: 1500,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -60,11 +60,11 @@ export const products = [
   },
   {
     id: "1235ads991egjdsc",
-    name: "small tote bag",
+    name: "Gucci bag",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item5,
-    price: 45000,
+    price: 28000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -78,7 +78,7 @@ export const products = [
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item6,
     price: 45000,
-    location: "Lagos",
+    location: "Ibadan",
     stock: 5,
     selected: false,
     review:
@@ -99,11 +99,11 @@ export const products = [
   },
   {
     id: "1235ads451egjdsc",
-    name: "small tote bag",
+    name: "Nike Shoes",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item2,
-    price: 45000,
+    price: 55000,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -112,11 +112,11 @@ export const products = [
   },
   {
     id: "1235ads421egjdab",
-    name: "small tote bag",
+    name: "Coke",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item3,
-    price: 45000,
+    price: 150,
     location: "Lagos",
     stock: 5,
     selected: false,
@@ -138,11 +138,11 @@ export const products = [
   },
   {
     id: "1235efs421egjdsc",
-    name: "small tote bag",
+    name: "Hot Ice Perfume",
     description:
       "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
     image: item6,
-    price: 45000,
+    price: 15000,
     location: "Lagos",
     stock: 5,
     selected: false,

@@ -7,7 +7,7 @@ const Checkout = () => {
     <div className="checkout">
       <SectionWrapper>
         <div className="checkout-content">
-          <img src={checkout} alt="checkout" />
+          <img src={checkout} alt="checkout" className="cart-image" />
           <p className="success">Checkout Succesful</p>
           <p className="successful">Your checkout is now successful.</p>
           <button

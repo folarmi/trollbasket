@@ -14,7 +14,10 @@ import "../Cart/Cart.css";
 const Cart = ({ products, cart, removeFromCart }) => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [totalItems, setTotalItems] = useState(0);
+  const [input] = useState();
   const recentlyViewed = products.slice(1, 4);
+  console.log(cart);
+  const onChangeHandler = () => {};
 
   useEffect(() => {
     let items = 0;
@@ -58,9 +61,9 @@ const Cart = ({ products, cart, removeFromCart }) => {
                     <img src={deleteButton} alt="delete" />
                     <p>Delete</p>
                   </div>
-                  <div className="cart-add">
+                  <div className="cart-add" onClick={onChangeHandler}>
                     <img src={plus} alt="plus" />
-                    <p>{qty}</p>
+                    <p>{input}</p>
                     <img src={minus} alt="minus" />
                   </div>
                 </div>
