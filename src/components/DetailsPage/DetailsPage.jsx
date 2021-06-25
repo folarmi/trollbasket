@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { addToCart } from "../../redux/Shopping/shopping-actions";
 import "../DetailsPage/DetailsPage.css";
 import leftArrow from "../../assets/leftArrow.svg";
+import rightArrow from "../../assets/rightArrow.svg";
 import search from "../../assets/search.svg";
 import rating from "../../assets/rating.svg";
 import avatar from "../../assets/avatar.svg";
@@ -38,24 +39,35 @@ const DetailsPage = ({ product, addToCart }) => {
         </section>
 
         <section>
-          <p>Product Description</p>
-          <div className="">
-            <p>Reviews and Ratings</p>
-            <p>View All</p>
+          <div className="product-flex">
+            <p className="product-info">Product Description</p>
+            <img src={rightArrow} alt="rightArrow" />
+          </div>
+          <div className="product-flex r-r">
+            <p className="product-info">Reviews and Ratings</p>
+            <p className="view">View All</p>
           </div>
           <div className="">
-            <img src={rating} alt="rating" />
-            <p>
+            <section className="product-rating">
+              <img src={rating} alt="rating" />
+              <p>3.0</p>
+            </section>
+            <p className="rating-desc">
               This is the best product I have used in a long while and the size
               fits perfectly and I love the colors!!!!!
             </p>
-            <img src={avatar} alt="avatar" />
+            <img src={avatar} alt="avatar" className="avatar" />
           </div>
         </section>
 
         <div className="buttons">
-          <button onClick={() => addToCart(product.id)}>Add to cart</button>
-          <button>Wishlist</button>
+          <button
+            onClick={() => addToCart(product.id)}
+            className="primary-button"
+          >
+            Add to cart
+          </button>
+          <button className="secondary-button">Wishlist</button>
         </div>
       </SectionWrapper>
     </div>
